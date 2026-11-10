@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Cotizador Seguro | Demo Académica</title>
+<link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar">
+    <div class="logo"><span class="logo-icon">A<span>+</span></span><div><b>ALKOSTOPLUS</b><small>LAB · WORKFLOW SEGURO</small></div></div>
+    <div class="line"></div>
+    <div class="nav active"><span>◈</span> Panel de pruebas</div>
+    <div class="nav"><span>▣</span> Catálogo simulado</div>
+    <div class="nav"><span>◎</span> Control humano</div>
+    <div class="grow"></div>
+    <div class="side-note"><strong>Entorno académico</strong><p>Todos los productos, precios, inventarios y aprobaciones son ficticios.</p><span class="pill small">● 100% local</span></div>
+  </aside>
+  <main class="content">
+    <header><div><div class="eyebrow">PROYECTO FINAL · DEMOSTRACIÓN REPRODUCIBLE</div><h1>Cotizador <span>Seguro</span></h1><p>Validación comercial con reglas, herramientas y aprobación humana.</p></div><div class="header-tag"><span class="dot"></span> SISTEMA OPERATIVO</div></header>
+    <section class="metrics">
+      <div class="metric"><div class="metric-top"><span>Solicitudes procesadas</span><span>◇</span></div><b id="m-total">0</b><small>Memoria persistente de la demo</small></div>
+      <div class="metric"><div class="metric-top"><span>Aprobadas</span><span>✓</span></div><b id="m-aprobadas">0</b><small>Automáticas y humanas</small></div>
+      <div class="metric"><div class="metric-top"><span>Pendientes de revisión</span><span>◷</span></div><b id="m-pendientes">0</b><small>Umbral humano: descuento &gt;10%</small></div>
+    </section>
+    <div class="columns">
+      <section class="card task">
+        <div class="section-heading"><div><span class="step">01</span><h2>Ejecutar workflow</h2></div><span class="mini">Entrada controlada</span></div>
+        <label for="mensaje">SOLICITUD SIMULADA</label>
+        <textarea id="mensaje" spellcheck="false">Cotiza 2 unidades de CEL-A1 con 5% de descuento</textarea>
+        <div class="examples"><div class="ex-title">PROBAR ESCENARIOS</div><button class="chip" data-example="normal">✓ Caso normal</button><button class="chip" data-example="control">◷ Aprobación humana</button><button class="chip" data-example="error">! Error de inventario</button><button class="chip" data-example="privacidad">⊘ Datos sensibles</button></div>
+        <button class="primary" id="ejecutar">Ejecutar solicitud <span>→</span></button>
+        <div class="hint">Solo se guardan códigos, cantidades y decisiones de prueba. No introducir datos reales.</div>
+      </section>
+      <section class="card result">
+        <div class="section-heading"><div><span class="step">02</span><h2>Resultado y trazabilidad</h2></div><span id="status-tag" class="tag neutral">SIN EJECUTAR</span></div>
+        <div id="empty-result" class="empty"><div class="empty-icon">⌁</div><b>Esperando una solicitud</b><p>Ejecuta un caso para observar la clasificación, las herramientas y el estado final.</p></div>
+        <div id="live-result" hidden>
+          <div class="field-title">ENRUTAMIENTO</div><div class="value-row"><span id="ruta">—</span><span class="tiny">Ruta calculada</span></div>
+          <div class="field-title">DETALLE DEL RESULTADO</div><div class="detail" id="motivo">—</div>
+          <div class="quote" id="quote" hidden><div class="quote-top"><span id="product">—</span><span id="code">—</span></div><div class="quote-info">Cantidad <b id="quantity">—</b> · Descuento <b id="discount">—</b></div><div class="quote-value">Total <b id="total">—</b></div></div>
+          <div class="approval" id="approval" hidden><strong>⚑ Acción humana requerida</strong><p>La cotización está bloqueada hasta que un responsable decida.</p><input id="responsable" placeholder="Responsable (ej. Docente Demo)" value="Revisor de demostración"/><div class="actions"><button class="yes" id="aprobar">Aprobar</button><button class="no" id="rechazar">Rechazar</button></div></div>
+          <div class="field-title trace-title">TRAZA DEL ESTADO</div><ol id="trace"></ol>
+        </div>
+      </section>
+    </div>
+    <section class="catalog-section"><div class="section-heading"><div><span class="step">03</span><h2>Herramienta: catálogo ficticio</h2></div><span class="mini">Fuente única de precios y stock</span></div><div class="catalog" id="catalog"></div></section>
+    <footer><span>Flujo determinista · Sin IA externa · Sin API keys</span><span>DEMO EDUCATIVA / NO PRODUCCIÓN</span></footer>
+  </main>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>

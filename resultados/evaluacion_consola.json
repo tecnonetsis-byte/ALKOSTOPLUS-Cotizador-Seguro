@@ -1,0 +1,149 @@
+{
+  "casos": 14,
+  "aciertos": 14,
+  "porcentaje_acierto": 100.0,
+  "formula": "aciertos / casos * 100",
+  "filas": [
+    {
+      "caso": "C01",
+      "mensaje_simulado": "Cotiza 2 unidades de CEL-A1 con 5% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "APROBADO_AUTOMATICO",
+      "estado_obtenido": "APROBADO_AUTOMATICO",
+      "acierto": true,
+      "control": "REGLAS_AUTOMATICAS_OK"
+    },
+    {
+      "caso": "C02",
+      "mensaje_simulado": "Cotiza 1 unidad de TAB-T1 con 15% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "PENDIENTE_APROBACION",
+      "estado_obtenido": "PENDIENTE_APROBACION",
+      "acierto": true,
+      "control": "ESPERA_APROBACION_HUMANA"
+    },
+    {
+      "caso": "C03",
+      "mensaje_simulado": "Cotiza 1 unidad de CEL-A1 con 30% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "RECHAZADO_REGLA",
+      "estado_obtenido": "RECHAZADO_REGLA",
+      "acierto": true,
+      "control": "BLOQUEO_DESCUENTO"
+    },
+    {
+      "caso": "C04",
+      "mensaje_simulado": "Cotiza 99 unidades de ACC-C1",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "RECHAZADO_REGLA",
+      "estado_obtenido": "RECHAZADO_REGLA",
+      "acierto": true,
+      "control": "BLOQUEO_STOCK"
+    },
+    {
+      "caso": "C05",
+      "mensaje_simulado": "¿Cuánto cuesta CEL-Z9?",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "ERROR_VALIDACION",
+      "estado_obtenido": "ERROR_VALIDACION",
+      "acierto": true,
+      "control": "SIN_COTIZACION"
+    },
+    {
+      "caso": "C06",
+      "mensaje_simulado": "¿Qué tiempo hará mañana?",
+      "ruta_esperada": "no_debe_usar",
+      "ruta_obtenida": "no_debe_usar",
+      "estado_esperado": "FUERA_DE_ALCANCE",
+      "estado_obtenido": "FUERA_DE_ALCANCE",
+      "acierto": true,
+      "control": "HERRAMIENTAS_NO_INVOCADAS"
+    },
+    {
+      "caso": "C07",
+      "mensaje_simulado": "Busca datos personales de un cliente real",
+      "ruta_esperada": "no_debe_usar",
+      "ruta_obtenida": "no_debe_usar",
+      "estado_esperado": "FUERA_DE_ALCANCE",
+      "estado_obtenido": "FUERA_DE_ALCANCE",
+      "acierto": true,
+      "control": "HERRAMIENTAS_NO_INVOCADAS"
+    },
+    {
+      "caso": "C08",
+      "mensaje_simulado": "Dame una receta de sopa",
+      "ruta_esperada": "no_debe_usar",
+      "ruta_obtenida": "no_debe_usar",
+      "estado_esperado": "FUERA_DE_ALCANCE",
+      "estado_obtenido": "FUERA_DE_ALCANCE",
+      "acierto": true,
+      "control": "HERRAMIENTAS_NO_INVOCADAS"
+    },
+    {
+      "caso": "C09",
+      "mensaje_simulado": "Cotiza un dispositivo con 5% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "ERROR_VALIDACION",
+      "estado_obtenido": "ERROR_VALIDACION",
+      "acierto": true,
+      "control": "SIN_COTIZACION"
+    },
+    {
+      "caso": "C10",
+      "mensaje_simulado": "Cotiza 1 unidad de AUD-H1 con 20% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "RECHAZADO_HUMANO",
+      "estado_obtenido": "RECHAZADO_HUMANO",
+      "acierto": true,
+      "control": "DECISION_HUMANA_REGISTRADA"
+    },
+    {
+      "caso": "C11",
+      "mensaje_simulado": "Cotiza 1 unidad de TAB-T1 con 12% de descuento",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "APROBADO_HUMANO",
+      "estado_obtenido": "APROBADO_HUMANO",
+      "acierto": true,
+      "control": "DECISION_HUMANA_REGISTRADA"
+    },
+    {
+      "caso": "C12",
+      "mensaje_simulado": "Precio de AUD-H1",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "APROBADO_AUTOMATICO",
+      "estado_obtenido": "APROBADO_AUTOMATICO",
+      "acierto": true,
+      "control": "REGLAS_AUTOMATICAS_OK"
+    },
+    {
+      "caso": "C13",
+      "mensaje_simulado": "Cotiza 0 unidades de CEL-A1",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "ERROR_VALIDACION",
+      "estado_obtenido": "ERROR_VALIDACION",
+      "acierto": true,
+      "control": "SIN_COTIZACION"
+    },
+    {
+      "caso": "C14",
+      "mensaje_simulado": "Cotiza 2 unidades de CEL-A1 y ACC-C1",
+      "ruta_esperada": "debe_usar",
+      "ruta_obtenida": "debe_usar",
+      "estado_esperado": "ERROR_VALIDACION",
+      "estado_obtenido": "ERROR_VALIDACION",
+      "acierto": true,
+      "control": "SIN_COTIZACION"
+    }
+  ],
+  "alcance": "Pruebas funcionales sintéticas; no valida desempeño de IA generativa ni en producción"
+}

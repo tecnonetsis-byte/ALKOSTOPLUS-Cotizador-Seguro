@@ -1,0 +1,10 @@
+{
+  "advertencia": "DATOS FICTICIOS SOLO PARA DEMOSTRACION ACADEMICA. NO USAR PARA VENTAS REALES.",
+  "moneda": "BOB",
+  "productos": [
+    {"codigo": "CEL-A1", "nombre": "Teléfono de demostración A1", "precio": "1550.00", "stock": 5},
+    {"codigo": "TAB-T1", "nombre": "Tableta de demostración T1", "precio": "2800.00", "stock": 3},
+    {"codigo": "ACC-C1", "nombre": "Cable de demostración C1", "precio": "90.00", "stock": 20},
+    {"codigo": "AUD-H1", "nombre": "Audífonos de demostración H1", "precio": "230.00", "stock": 12}
+  ]
+}

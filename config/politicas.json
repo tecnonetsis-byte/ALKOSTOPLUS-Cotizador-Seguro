@@ -1,0 +1,13 @@
+{
+  "instrucciones": [
+    "Atender exclusivamente cotizaciones con códigos de productos ficticios del catálogo interno.",
+    "No solicitar, almacenar ni procesar datos reales de clientes, credenciales o tarjetas.",
+    "No inventar productos, precios ni existencias.",
+    "Rechazar cantidades fuera de stock o descuentos superiores al máximo permitido.",
+    "Requerir una decisión humana explícita para descuentos superiores al umbral automático.",
+    "Registrar transiciones de estado y el resultado de la aprobación o rechazo."
+  ],
+  "descuento_automatico_max_pct": "10.00",
+  "descuento_absoluto_max_pct": "25.00",
+  "stock_control": true
+}

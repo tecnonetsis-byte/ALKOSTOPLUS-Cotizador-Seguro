@@ -1,0 +1,15 @@
+PROYECTO FINAL - REPOSITORIO, README, PRUEBAS Y VIDEO
+
+Nombre del proyecto: ALKOSTOPLUS Lab - Cotizador Seguro (workflow academico)
+
+Repositorio en GitHub: [PEGAR AQUI EL ENLACE REAL UNA VEZ PUBLICADO]
+Video demo (3 a 5 minutos): [PEGAR AQUI ENLACE DE YOUTUBE NO LISTADO / DRIVE / LOOM O EL ENLACE AL MP4 DEL REPOSITORIO]
+
+Integrantes del equipo:
+- [NOMBRE Y APELLIDO 1]
+- [NOMBRE Y APELLIDO 2, SI CORRESPONDE]
+- [NOMBRE Y APELLIDO 3, SI CORRESPONDE]
+
+El repositorio incluye el codigo ejecutable, README con arquitectura y los cinco primitivos, 14 casos de evaluacion, 22 pruebas automatizadas y video explicativo. Los datos de productos, precios y aprobaciones son ficticios. No se usan API keys.
+
+IMPORTANTE: Estos campos no se pueden completar sin conocer los nombres y las URL publicadas. Publicar el repo/video antes de pegar y enviar este texto al aula virtual.

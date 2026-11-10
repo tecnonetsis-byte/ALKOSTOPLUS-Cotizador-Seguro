@@ -1,0 +1,27 @@
+test_catalogo_responde (test_webserver.PruebasHTTP.test_catalogo_responde) ... ok
+test_index_html_responde (test_webserver.PruebasHTTP.test_index_html_responde) ... ok
+test_post_aprobacion (test_webserver.PruebasHTTP.test_post_aprobacion) ... ok
+test_post_procesar (test_webserver.PruebasHTTP.test_post_procesar) ... ok
+test_almacen_no_guarda_mensaje (test_workflow.TestsWorkflow.test_almacen_no_guarda_mensaje) ... ok
+test_aprobacion_humana_obligatoria (test_workflow.TestsWorkflow.test_aprobacion_humana_obligatoria) ... ok
+test_cantidad_cero (test_workflow.TestsWorkflow.test_cantidad_cero) ... ok
+test_codigo_inexistente (test_workflow.TestsWorkflow.test_codigo_inexistente) ... ok
+test_codigo_omitido (test_workflow.TestsWorkflow.test_codigo_omitido) ... ok
+test_datos_sensibles_bloqueados (test_workflow.TestsWorkflow.test_datos_sensibles_bloqueados) ... ok
+test_descuento_excesivo (test_workflow.TestsWorkflow.test_descuento_excesivo) ... ok
+test_dos_productos_rechazados (test_workflow.TestsWorkflow.test_dos_productos_rechazados) ... ok
+test_eval_14_casos (test_workflow.TestsWorkflow.test_eval_14_casos) ... ok
+test_humano_aprueba (test_workflow.TestsWorkflow.test_humano_aprueba) ... ok
+test_humano_rechaza (test_workflow.TestsWorkflow.test_humano_rechaza) ... ok
+test_precio_real_del_catalogo_ficticio (test_workflow.TestsWorkflow.test_precio_real_del_catalogo_ficticio) ... ok
+test_precio_sin_descuento (test_workflow.TestsWorkflow.test_precio_sin_descuento) ... ok
+test_prohibido_aprobar_dos_veces (test_workflow.TestsWorkflow.test_prohibido_aprobar_dos_veces) ... ok
+test_prohibido_aprobar_sin_responsable (test_workflow.TestsWorkflow.test_prohibido_aprobar_sin_responsable) ... ok
+test_ruta_externa (test_workflow.TestsWorkflow.test_ruta_externa) ... ok
+test_ruta_venta (test_workflow.TestsWorkflow.test_ruta_venta) ... ok
+test_stock_bloqueado (test_workflow.TestsWorkflow.test_stock_bloqueado) ... ok
+
+----------------------------------------------------------------------
+Ran 22 tests in 0.542s
+
+OK
